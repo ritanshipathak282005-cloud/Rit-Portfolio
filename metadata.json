@@ -1,0 +1,8 @@
+{
+  "name": "RITANSHI — Fashion Designer",
+  "description": "Immersive spatial portfolio showcasing editorial fashion collections, denim experimentation, surface development, and material research by Ritanshi.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
