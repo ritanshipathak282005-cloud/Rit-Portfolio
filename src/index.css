@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@media (hover: hover) and (pointer: fine) {
+  html.custom-cursor-active,
+  html.custom-cursor-active body,
+  html.custom-cursor-active #root,
+  .custom-cursor-active,
+  .custom-cursor-active * {
+    cursor: none !important;
+  }
+}
+
+.editorial-paper-grain {
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0.038;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 250 250' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='film-grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.51  0 0 0 0 0.15  0 0 0 0 0.08  0 0 0 0.28 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23film-grain)'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='paper-tooth'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.55  0 0 0 0 0.18  0 0 0 0 0.10  0 0 0 0.20 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23paper-tooth)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 160px 160px, 400px 400px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.editorial-photo-frame {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 12px 34px rgba(130, 23, 19, 0.07), 0 2px 8px rgba(130, 23, 19, 0.03);
+}
+
+.no-select {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #c81d25;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(243, 197, 205, 0.25);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(243, 197, 205, 0.55);
+}
+
+/* Editorial Fashion Sketchbook 3D Page Flip Utilities */
+.sketchbook-perspective {
+  perspective: 2000px;
+  perspective-origin: center center;
+}
+
+.sketchbook-page-stack-shadow {
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.12),
+    0 12px 28px rgba(0, 0, 0, 0.35),
+    0 24px 60px rgba(0, 0, 0, 0.45);
+}
+
